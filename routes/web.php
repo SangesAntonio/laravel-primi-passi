@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
-    return view('home');
+    $data = [
+        'day' => '14/03/2022',
+    ];
+    return view('home', $data);
+});
+Route::get('/page', function () {
+    $data = [
+        'numb_days' => 25,
+        'languages' => ['HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT', 'VUE.JS', 'PHP', 'MYSQL', 'LARAVEL']
+    ];
+    return view('page', $data);
 });
