@@ -16,7 +16,7 @@
 <body>
     <h1>Hello World</h1>
     <p>oggi è {{$day}}</p>
-    <h2>Quanti giorni mancano alla fine del corso? scoprilo subito <a href="{{url('/page')}}">Clicca qui</a></h2>
+    <h2>Quanti giorni mancano alla fine del corso? scoprilo subito <a href="{{route('page')}}">Clicca qui</a></h2>
 </body>
 
 </html>

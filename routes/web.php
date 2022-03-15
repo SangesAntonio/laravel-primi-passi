@@ -25,4 +25,4 @@ Route::get('/page', function () {
         'languages' => ['HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT', 'VUE.JS', 'PHP', 'MYSQL', 'LARAVEL']
     ];
     return view('page', $data);
-});
+})->name('page');
